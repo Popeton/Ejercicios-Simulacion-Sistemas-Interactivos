@@ -31,7 +31,7 @@ public class Graph : MonoBehaviour
         {
            
             float x = i * distanceFactor;
-            float y = amplitud * Mathf.Sin(x * Time.time);
+            float y = amplitud * Mathf.Sin(x +Time.time);
             allPoints[i].transform.localPosition = new Vector3(x, y, 0);
         }
     }
